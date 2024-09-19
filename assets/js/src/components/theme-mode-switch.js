@@ -11,12 +11,12 @@ const themeModeSwitch = (() => {
 
   let checkbox = modeSwitch.querySelector('.form-check-input');
 
-  if (mode === 'light') {
-    root.classList.remove('dark-mode');
-    checkbox.checked = false;
-  } else {
+  if (mode === 'dark') {
     root.classList.add('dark-mode');
     checkbox.checked = true;
+  } else {
+    root.classList.remove('dark-mode');
+    checkbox.checked = false;
   }
 
   modeSwitch.addEventListener('click', (e) => {
