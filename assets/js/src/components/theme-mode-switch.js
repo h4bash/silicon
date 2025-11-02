@@ -11,7 +11,7 @@ const themeModeSwitch = (() => {
 
   let checkbox = modeSwitch.querySelector('.form-check-input');
 
-  if (mode === 'light') {
+  if (mode === 'dark') {
     root.classList.add('dark-mode');
     checkbox.checked = true;
   } else {
